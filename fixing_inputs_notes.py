@@ -1,4 +1,4 @@
-# DL, Fixing Inputs
+# DL, Fixing Inputs Notes
 
 # when you want a specific input
 while True:
