@@ -5,10 +5,10 @@ while True:
      color = input("Tell me a color that is only 1 word:").lower().strip()
      if color.isnumeric():
             print("Sorry, that is a number. Please enter a color.")
-        elif " " in color:
+     elif " " in color:
             print("I said one word!")
-        else:
-            break
+     else:
+          break
      
 print(f"I painted your walls {color}!")
 
