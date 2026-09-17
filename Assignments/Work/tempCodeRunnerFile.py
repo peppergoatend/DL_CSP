@@ -1,0 +1,1 @@
+(rent + utilities + groceries + transportation)} of spending money each month!")
