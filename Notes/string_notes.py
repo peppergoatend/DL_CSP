@@ -3,7 +3,7 @@
 last_name ='Le'
 first_name = "Dara"
 
-# concatentition => add two string together
+# concatenation => add two string together
 name = first_name + " " + last_name
 
 # escape character lets the program ignore the next character in the string
