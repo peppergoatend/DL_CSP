@@ -24,19 +24,19 @@ for letter in password:
 rules_met = 0
 
 if length:
-    rules_met = rules_met + 1
+    rules_met += 1
 
 if uppercase:
-    rules_met = rules_met + 1
+    rules_met += 1
 
 if lowercase:
-    rules_met = rules_met + 1
+    rules_met += 1
 
 if number:
-    rules_met = rules_met + 1
+    rules_met += 1
 
 if symbol:
-    rules_met = rules_met + 1
+    rules_met += 1
 
 if rules_met == 5:
     strength = "Strong"
