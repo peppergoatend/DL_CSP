@@ -1,4 +1,4 @@
-# DL, Loops Notes
+# DL, Loops & Lists Notes
 import random
 
 # code that will repeat over and over again
