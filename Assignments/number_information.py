@@ -1,12 +1,14 @@
 # DL, Number Information
 
-for number in range (1,21):
-    if number%5 == 0:
-        divided_5 = "divisible by 5."
+for number in range(1, 21):
+    if number % 2 == 0:
+        if number % 5 == 0:
+            print(f"{number} is even and divisible by 5.")
+        else:
+            print(f"{number} is even and not divisible by 5.")
     else:
-       divided_5 = "is not divisble by 5."
-    if number%2 == 0:
-        odd_even = "even"
-    else:
-        odd_even = "odd"
-    print(f"{number} is {odd_even} and {divided_5}")
+        if number % 5 == 0:
+            print(f"{number} is odd and divisible by 5.")
+        else:
+            print(f"{number} is odd and not divisible by 5.")
+
