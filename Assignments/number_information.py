@@ -8,5 +8,5 @@ for number in range (1,21):
     if number%2 == 0:
         odd_even = "even"
     else:
-        old_even = "odd"
-print(f"{number} is {odd_even} and {divided_5}")
+        odd_even = "odd"
+    print(f"{number} is {odd_even} and {divided_5}")
