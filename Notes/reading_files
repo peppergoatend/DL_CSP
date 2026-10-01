@@ -1,0 +1,15 @@
+# DL, Reading and Writng to file
+
+with open('Notes/practice.txt',"r") as file:
+    content = file.read()
+    print(content)
+    word = content.find("Le")
+    length = len("Le")
+    content += " Byron!"
+    file.write(content)
+
+    print(content.upper())
+    # The .upper() only makes the changes in the code. Not the document
+
+with open('Notes/practice.txt',"w") as file:
+    file.write("Hello")
