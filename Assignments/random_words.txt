@@ -1,0 +1,12 @@
+# Random list of words for Hangman
+
+- Lantern
+- Meadow
+- Quartz
+- Whistle
+- Velvet
+- Cactus
+- Thunder
+- Marble
+- Sparrow
+- Compass
