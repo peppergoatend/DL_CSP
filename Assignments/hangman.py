@@ -4,7 +4,7 @@ import random
 
 words = []
 
-with open("Assignments/random_words.txt", "r") as file:
+with open("Assignments/words.txt", "r") as file:
     for line in file:
         words.append(line.strip())
         
@@ -40,3 +40,5 @@ def show_word(secret_word, guessed_letters):
             display_word += "_"
 
     return display_word
+
+print(words)
