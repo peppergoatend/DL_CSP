@@ -1,51 +1,42 @@
 # DL, Hangman
-#note: this is case sensitive so we should do .lower()
 
-# Create a list of 10 words on a separate txt file
-# create another file holds qwins/loss counts
-# Use split(",") on the content of the words txt document to create your list of words
-# pull win and lose totals from the other txt files and save them as 2 separate variables
-#build the hangman game
-# save the correct word as a variable random.choice(name of list)
-# number of wrong guesses
-# what letters have been guessed
+import random
 
-# function to display the hangman (needs numbers of wrong guesses)
-"""_______
-    |    |
-    |    O
-    |   /|\\
-    |   / \\
-    |________
-"""
+words = []
 
-# function to show the letters and space (the correct word, letters that have been guessed)
+with open("Assignments/random_words.txt", "r") as file:
+    for line in file:
+        words.append(line.strip())
+        
+secret_word = random.choice(words)
 
-# loop over the correct word
-    # variable for display word (starts as an empty string)
-    #check if letter has been guessed
-        # than add the letter to the display word
-    # if they haven't guessed it
-        # add an underscore to the display word
-#return the finished display word (outside of the loop)
+try:
+    stats = []
 
-# main game loop (while True)
-# call function to show hangman
-# print function call to show display word
-# create variable and ask user to guess a letter
-# add the letter to list of guessed letters
-# check if not letter in word
-    # increasse incorrect guesses
-# check if display word is the same as the word
-    # tell user they won
-    # increase win total
-    # ask if they want to play again
-    # reset random word, reset wrong guess count
-# check to see if they lost (if they have 6 wrong guesses)
-    #tell them they lost
-    # tell them what the word was
-    # increases the lost count
-    # ask if they want to play again
-                #reset random word, reset worng guess count
+    with open("Assignments/stats.txt", "r") as file:
+        for line in file:
+            stats.append(line.strip())
 
-                
+    wins = int(stats[0])
+    losses = int(stats[1])
+
+except:
+    wins = 0
+    losses = 0
+
+guessed_letters = []
+wrong_guesses = 0
+
+max_wrong_guesses = 6
+
+
+def show_word(secret_word, guessed_letters):
+    display_word = ""
+
+    for letter in secret_word:
+        if letter in guessed_letters:
+            display_word += letter
+        else:
+            display_word += "_"
+
+    return display_word
