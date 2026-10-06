@@ -1,1 +1,1 @@
-lantern, meadow, quartz, whistle, velvet, cactus, thunder, marble, sparrow, compass
+lantern,meadow,quartz,whistle,velvet,cactus,thunder,marble,sparrow,compass
