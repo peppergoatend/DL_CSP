@@ -89,7 +89,7 @@ def show_hangman(wrong_guesses):
  |    / \\
  |________
 """)
-
+#me after:
 
 def show_word(secret_word, guessed_letters):
     display_word = ""
@@ -101,7 +101,8 @@ def show_word(secret_word, guessed_letters):
             display_word = display_word + "_"
 
     return display_word
-
+    
+#I have a headache
 
 while True:
     show_hangman(wrong_guesses)
@@ -146,7 +147,7 @@ while True:
                 wrong_guesses = 0
             else:
                 break
-
+#that was so painful to make
 
 with open("Assignments/stats.txt", "w") as file:
     file.write(str(wins) + "," + str(losses))
