@@ -89,7 +89,6 @@ def show_hangman(wrong_guesses):
  |    / \\
  |________
 """)
-#me after:
 
 def show_word(secret_word, guessed_letters):
     display_word = ""
@@ -101,8 +100,6 @@ def show_word(secret_word, guessed_letters):
             display_word = display_word + "_"
 
     return display_word
-    
-#I have a headache
 
 while True:
     show_hangman(wrong_guesses)
