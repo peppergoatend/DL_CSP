@@ -30,4 +30,3 @@ if matinee == "yes":
 
 # Print the price with two decimal places
 print(f"Ticket price: ${price:.2f}")
-z
