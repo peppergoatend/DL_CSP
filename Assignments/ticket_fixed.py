@@ -1,22 +1,33 @@
-#DL, Ticket Fixed
+# DL, Ticket Fixed
 
+age_input = input("Enter your age: ")
+
+# Check that the age is a whole number of 0 or more
 try:
-    age = int(input("Enter your age: "))
-    matinee = input("Is this a matinee? (yes/no): ").lower()
+    age = int(age_input)
+    if age < 0:
+        print("Invalid age")
+        exit()
 except ValueError:
-    print("Invalid input. Please enter a valid number for your age.")
+    print("Invalid age")
     exit()
 
-if age < 5:
+matinee = input("Is this a matinee? (yes/no): ").lower()
+
+# Determine ticket price by age
+if age <= 4:
     price = 0
-elif age < 12:
+elif age <= 12:
     price = 8
-elif age < 65:
+elif age <= 64:
     price = 12
 else:
     price = 9
 
+# Apply the matinee discount without going below $0
 if matinee == "yes":
-    price = price - 3
+    price = max(0, price - 3)
 
-print(f"Ticket price: ${price}")
+# Print the price with two decimal places
+print(f"Ticket price: ${price:.2f}")
+z
